@@ -22,6 +22,7 @@ if __name__ == "__main__":
     elif (sys.argv)[2] == "/":
         ans = calc.add(a, b)
         print("{:d} / {:d} = {:d}".format(a, b, ans))
-    else:
+    elif sys.argv[2] != "+" and sys.argv[2] != "-" and sys.argv[2] != "*"
+    and sys.argv[2] != "/":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
