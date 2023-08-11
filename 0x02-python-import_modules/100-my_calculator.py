@@ -9,20 +9,20 @@ if __name__ == "__main__":
         exit(1)
     a = int((sys.argv)[1])
     b = int((sys.argv)[3])
+    sign = sys.argv[2]
 
-    if (sys.argv)[2] == "+":
+    if sign == "+":
         ans = calc.add(a, b)
         print("{:d} + {:d} = {:d}".format(a, b, ans))
-    elif (sys.argv)[2] == "-":
+    elif sign == "-":
         ans = calc.sub(a, b)
         print("{:d} - {:d} = {:d}".format(a, b, ans))
-    elif (sys.argv)[2] == "*":
+    elif sign == "*":
         ans = calc.mul(a, b)
         print("{:d} * {:d} = {:d}".format(a, b, ans))
-    elif (sys.argv)[2] == "/":
+    elif sign == "/":
         ans = calc.add(a, b)
         print("{:d} / {:d} = {:d}".format(a, b, ans))
-    elif sys.argv[2] != "+" and sys.argv[2] != "-" and sys.argv[2] != "*"
-    and sys.argv[2] != "/":
+    elif sign != "+" and sign != "-" and sign != "*" and sign != "/":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
