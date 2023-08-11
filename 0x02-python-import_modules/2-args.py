@@ -3,10 +3,14 @@
 if __name__ == "__main__":
     import sys
 
-    print("{:d} arguments".format(len(sys.argv) - 1), end="")
     if len(sys.argv) == 1:
+        print("{:d} arguments".format(len(sys.argv) - 1), end="")
         print(".")
     else:
+        if len(sys.argv) == 2:
+            print("{:d} argument".format(len(sys.argv) - 1), end="")
+        else:
+            print("{:d} arguments".format(len(sys.argv) - 1), end="")
         print(":")
 
         x = 1
