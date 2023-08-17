@@ -2,14 +2,9 @@
 def uniq_add(my_list=[]):
     if not my_list:
         return
-    unique = []
-    unique.append(my_list[0])
+    unique = set(my_list)
 
-    for i in my_list:
-        if i not in unique:
-            unique.append(i)
-
-    sum = 0
+    summ = 0
     for j in unique:
-        sum = sum + j
-    return sum
+        summ = summ + j
+    return summ
