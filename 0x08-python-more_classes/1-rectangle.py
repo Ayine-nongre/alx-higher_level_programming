@@ -24,6 +24,10 @@ class Rectangle:
 
         Args:
         param1: value of width
+
+        raises:
+            TypeError
+            ValueError
         """
         if not isinstance(value, int):
             raise TypeError("width must be a integer")
@@ -47,6 +51,10 @@ class Rectangle:
 
         Args:
         param1: value of height
+
+        raises:
+            TypeError
+            ValueError
         """
 
         if not isinstance(value, int):
