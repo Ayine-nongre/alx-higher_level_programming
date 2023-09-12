@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Class that defines a rectangle from BaseGeometry Class """
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
