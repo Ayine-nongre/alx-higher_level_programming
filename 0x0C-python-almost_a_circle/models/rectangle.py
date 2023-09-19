@@ -16,7 +16,13 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Method for width setter param"""
+        """
+        Method for width setter param
+        
+        Args:
+        param: value of width
+        """
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -31,7 +37,13 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """Method for height setter param"""
+        """
+        Method for height setter param
+            
+        Args:
+        param: value of height
+        """
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -47,6 +59,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """Method for x setter param"""
+
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -62,6 +75,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """Method for y setter param"""
+
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
