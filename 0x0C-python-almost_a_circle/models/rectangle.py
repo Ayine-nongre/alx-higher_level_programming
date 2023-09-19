@@ -10,13 +10,13 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Width getter"""
+        """Method for width getter param"""
 
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Width setter"""
+        """Method for width setter param"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -25,13 +25,13 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Height getter"""
+        """Method for height getter param"""
 
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Height setter"""
+        """Method for height setter param"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -40,13 +40,13 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x getter"""
+        """Method for x getter param"""
 
         return self.__x
 
     @x.setter
     def x(self, value):
-        """x setter"""
+        """Method for x setter param"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -55,13 +55,13 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y getter"""
+        """Method for y getter param"""
 
         return self.__y
 
     @y.setter
     def y(self, value):
-        """y setter"""
+        """Method for y setter param"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
@@ -92,7 +92,7 @@ class Rectangle(Base):
         print(rectangle, end='')
 
     def __str__(self):
-        """Overrides str method"""
+        """Overrides str method using customised method"""
 
         str_rec = "[Rectangle]"
         str_id = " ({:d})".format(self.id)
@@ -102,7 +102,7 @@ class Rectangle(Base):
         return str_rec + str_id + str_xy + " -" + str_wh
 
     def update(self, *args, **kwargs):
-        """Method to update field"""
+        """Method to update field of instance"""
 
         if args is not None and len(args) != 0:
             list_atr = ['id', 'width', 'height', 'x', 'y']
