@@ -58,7 +58,12 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """Method for x setter param"""
+        """
+        Method for x setter param
+
+        Args:
+        param: value for x
+        """
 
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
@@ -74,7 +79,12 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Method for y setter param"""
+        """
+        Method for y setter param
+
+        Args:
+        param: value for y
+        """
 
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
@@ -83,7 +93,16 @@ class Rectangle(Base):
         self.__y = value
 
     def __init__(self, width=0, height=0, x=0, y=0, id=None):
-        """initialises all instances of variables"""
+        """
+        initialises all instances of variables
+
+        Args:
+        param1: width value
+        param2: height value
+        param3: x value
+        param4: y value
+        param5: id value
+        """
 
         self.__width = width
         self.__height = height
@@ -116,7 +135,13 @@ class Rectangle(Base):
         return str_rec + str_id + str_xy + " -" + str_wh
 
     def update(self, *args, **kwargs):
-        """Method to update field of instance"""
+        """
+        Method to update field of instance
+        
+        Args:
+        param1: unknown number of variable args
+        param2: unknown number of named variable args
+        """
 
         if args is not None and len(args) != 0:
             list_atr = ['id', 'width', 'height', 'x', 'y']
