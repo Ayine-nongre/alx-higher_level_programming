@@ -22,8 +22,9 @@ class Rectangle {
   }
 
   double () {
+    this.width = this.width * 2;
     for (let i = 0; i < this.height; i++) {
-      const str = 'X'.repeat(this.width * 2);
+      const str = 'X'.repeat(this.width);
       console.log(str);
     }
   }
