@@ -12,7 +12,7 @@ if __name__ == '__main__':
                          db=sys.argv[3], port=3306)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM cities ORDER BY id")
+    cur.execute("SELECT * FROM cities")
     cities = cur.fetchall()
 
     for city in cities:
