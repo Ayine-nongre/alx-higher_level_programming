@@ -18,6 +18,6 @@ if __name__ == '__main__':
 
     for state in states:
         if state is not states[len(states) - 1]:
-            print(state[0], end=",")
+            print(state[0], end=", ")
         else:
             print(state[0])
